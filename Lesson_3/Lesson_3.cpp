@@ -60,7 +60,7 @@ void Lesson_3::onInfoButton()
 {
     txtEdit = std::make_unique<QTextEdit>();
     txtEdit->resize(300, 300);
-    QString str = "./resource/info.txt";
+    QString str = ":/Resource/info.txt";
     QFile file(str);
     if (file.open(QFile::ReadOnly | QFile::ExistingOnly))
     {
