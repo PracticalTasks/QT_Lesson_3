@@ -1,9 +1,6 @@
 #include "Lesson_3.h"
 #include<QDir>
 #include<QTextStream>
-#include<QFileDialog>
-
-static QString oldtext;
 
 Lesson_3::Lesson_3(QWidget* parent)
     : QWidget(parent),
