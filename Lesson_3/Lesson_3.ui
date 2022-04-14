@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>543</width>
-    <height>422</height>
+    <width>397</width>
+    <height>322</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>30</y>
+     <y>0</y>
      <width>391</width>
      <height>311</height>
     </rect>
@@ -37,29 +37,33 @@
         <property name="text">
          <string>Открыть</string>
         </property>
+        <property name="icon">
+         <iconset resource="Lesson_3.qrc">
+          <normaloff>:/Resource/open-file.png</normaloff>:/Resource/open-file.png</iconset>
+        </property>
        </widget>
        <widget class="QPushButton" name="saveButton">
         <property name="text">
          <string>Сохранить</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Lesson_3.qrc">
+          <normaloff>:/Resource/save.png</normaloff>:/Resource/save.png</iconset>
         </property>
        </widget>
       </widget>
      </item>
     </layout>
    </widget>
-  </widget>
-  <widget class="QPushButton" name="infoButton">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>0</y>
-     <width>191</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Справка</string>
-   </property>
+   <widget class="QPushButton" name="infoButton">
+    <property name="text">
+     <string>Справка</string>
+    </property>
+    <property name="icon">
+     <iconset resource="Lesson_3.qrc">
+      <normaloff>:/Resource/info.png</normaloff>:/Resource/info.png</iconset>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

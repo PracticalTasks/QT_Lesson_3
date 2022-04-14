@@ -15,6 +15,7 @@ Lesson_3::Lesson_3(QWidget* parent)
 
 void Lesson_3::onSaveButton()
 {
+    
 
     auto str = QFileDialog::getSaveFileName(this, "Выбор папки",
         QDir::currentPath(), filter);
@@ -55,18 +56,13 @@ void Lesson_3::onOpenButton()
 
 void Lesson_3::onInfoButton()
 {
-    txtEdit = std::make_unique<QTextEdit>();
-    txtEdit->resize(300, 300);
-    QString str = ":/Resource/info.txt";
-    QFile file(str);
+    QString str;
+    QFile file(":/Resource/info.txt");
     if (file.open(QFile::ReadOnly | QFile::ExistingOnly))
     {
-        QTextStream stream(&file);
-        txtEdit->setText(stream.readAll());
+        str = file.readAll();
         file.close();
     }
-    txtEdit->setWindowTitle("Справка");
-    txtEdit->setReadOnly(true);
-    txtEdit->show();
+    QMessageBox::information(nullptr, "Справка", str);
     
 }
